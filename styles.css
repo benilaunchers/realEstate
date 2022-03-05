@@ -1,8 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;500&display=swap');
 *{
+    font-family: 'Zilla Slab', serif;
     margin : 0px;
     padding : 0px;
     box-sizing: border-box;
 }
 :root {
-    
+    --black-theme : #000000;
+    --active-color : white;
+    --theme-color : #afafaf;
+    --hover-color : #6a6a6a;
+}
+.header {
+    text-align: center;
+    padding: 100px 0px;
+    border-bottom: 2px solid var(--theme-color);
+}
+.logo {
+    display: inline-block;
+    text-align: center;
+    font-size: 2.5rem; 
+    min-height: 50px;  
+    min-width: 50px;
+    border-radius: 50%;
+    background-color: var(--black-theme);
+    color : var(--active-color);
+    padding: auto;
+}
+.header .title {
+    font-size: 2rem;
+    color : var(--theme-color);
+}
+.header .title:hover {
+    color : #6a6a6a;
+    cursor : pointer;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+}
+ul {
+    /* for solving white space */
+    font-size: 0px;
+    margin-top: 14px;
+    list-style-type: none;
+}
+.nav a {
+    text-decoration: none;
+    color : var(--theme-color);
+    font-size : 1.3rem;
+}
+a:hover {
+    cursor : pointer;
+    color : var(--hover-color);
+}
+.nav ul {
+    text-align: center;
+}
+.nav ul .list{
+    display: inline;
+}
+.no-right-border {
+    padding: 15px;
+}
+.list a:not(.no-right-border){
+    padding: 15px;
+    border-right: 2px solid var(--theme-color);
+} 
+#active {
+    background-color: var(--black-theme);
+    color : white;
+    border: none;
 }
