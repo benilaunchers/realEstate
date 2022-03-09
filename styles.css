@@ -158,5 +158,44 @@ a:hover {
 .info {
     background-color: var(--example-color);
     margin-top: 10px;
-    height: 500px;
+    height: 300px;
+    display: grid;
+    padding-top: 40px;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.header-svg{
+    min-width: 50px;
+    max-width: 50px;
+}
+.info-header {
+    display: flex;
+    align-items: center;
+}
+.info-title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+.info-explain {
+    color : var(--hover-color);
+    line-height: 20px;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    /* height: 100px; */
+    /* max-width: 500px; */
+}
+.read-more {
+    min-width: 20px;
+    max-width: 20px;
+}
+.info-button {
+    color : var(--hover-color);
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    font-size : 1.5rem;
+}
+.info-button:hover {
+    cursor: pointer;
+    color : black;
 }
