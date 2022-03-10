@@ -240,7 +240,7 @@ a:hover {
     color : white;
     background-color: var(--theme-color);
     margin:15px;
-    max-width: 80px;
+    max-width: 100px;
     text-align: center;
     transition: 0.3s;
 }
@@ -323,6 +323,9 @@ a:hover {
     }
     .about-us {
         grid-template-columns: 1fr;
+    }
+    .rent-info {
+        margin-top: 50px;
     }
     .footer {
         margin-top: 250px;
