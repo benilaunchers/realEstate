@@ -14,7 +14,8 @@
 }
 .container {
     margin: 50px;
-    margin-top : none;
+    margin-top : 0px;
+    margin-bottom: 0px;
 }
 .header {
     text-align: center;
@@ -158,9 +159,9 @@ a:hover {
 .info {
     background-color: var(--example-color);
     margin-top: 10px;
-    height: 300px;
+    min-height: 300px;
     display: grid;
-    padding-top: 40px;
+    padding: 40px;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
 }
@@ -198,4 +199,132 @@ a:hover {
 .info-button:hover {
     cursor: pointer;
     color : black;
+}
+.about-us {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    max-height: 400px;
+}
+.advantage {
+    display: flex;
+    justify-content: center;
+}
+.adv-section span {
+    display: block;
+}
+.adv-explain {
+    margin: 15px;
+}
+.word {
+    position: relative;
+    background-color: var(--theme-color);
+    color : white;
+    max-width: 100px;
+    margin : 15px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.word p {
+    position: absolute;
+    top : 32%;
+    left: 38%;
+}
+.adv-btn {
+    border: none;
+    border-radius: 5px;
+    color : white;
+    background-color: var(--theme-color);
+    margin:15px;
+    max-width: 80px;
+    text-align: center;
+    transition: 0.3s;
+}
+.adv-btn:hover {
+    cursor: pointer;
+    background-color: var(--hover-color);
+}
+.test {
+    margin : 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.test span {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.useful-list {
+    list-style-type:disc;
+    font-size: 1.1rem;
+}
+.testimonials img{
+    display: inline-block;
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+}
+.testimonials .test-explain {
+    display: inline-block;
+    width: 250px;
+}
+.footer {
+    text-align: center;
+    padding-top : 100px;
+}
+.footer .title {
+    font-size: 2rem;
+    color : var(--theme-color);
+}
+.footer .title:hover {
+    color : #6a6a6a;
+    cursor : pointer;
+}
+.programmer {
+    margin: 10px;
+}
+.end {
+    height: 20px;
+    background-color: black;
+}
+@media screen and (max-width : 768px){
+    .container {
+        margin: 0px;
+    }
+    ul {
+        width: 100%;
+    }
+    .nav ul .list{
+        display: block;
+        border-bottom: 1px solid var(--theme-color);
+    }
+    .nav ul .list a {
+        border: none;
+    }
+    .header {
+        border: none;
+    }
+    #active {
+        background : none;
+        color : black;
+    }
+    .example-part{
+        grid-template-columns: 1fr;
+        height: 1500px;
+    }
+    .info {
+        grid-template-columns: 1fr;
+    }
+    .test {
+        display: none;
+    }
+    .about-us {
+        grid-template-columns: 1fr;
+    }
+    .footer {
+        margin-top: 250px;
+    }
 }
